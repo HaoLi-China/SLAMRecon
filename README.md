@@ -6,7 +6,7 @@ The system is built based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2) a
 More information about SLAMRecon can be found in our project homepage: <http://irc.cs.sdu.edu.cn/SLAMRecon>  
 The document about the project an be downloaded [here](http://irc.cs.sdu.edu.cn/SLAMRecon/SLAMRecon_files/SLAMRecon.pdf).
 
-The system is developed by Hao Li, Huayong Xu and Guowei Wan.
+The system is developed by [Hao Li](https://github.com/HaoLi-China), [Huayong Xu](https://github.com/huayong) and [Guowei Wan](https://github.com/yellowpoplar).
 
 ## 2. License ##
 SLAMRecon is released under a [GPLv3 license]. More detailed information can be find in [LICENSE.txt](https://github.com/HaoLi-China/SLAMRecon/blob/master/LICENSE.txt). For a list of all code/library dependencies (and associated licenses), please see [Dependencies.md](https://github.com/HaoLi-China/SLAMRecon/blob/master/Dependencies.md).  
