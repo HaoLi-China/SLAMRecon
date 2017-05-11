@@ -1,0 +1,7 @@
+SLAMRecon is released under a GPLv3 license (see License-GPLv3.txt).
+Please see Dependencies.md for a list of all included code and library dependencies which are not property of the authors of SLAMRecon.
+Please obey the associated license for the code listed in Dependencies.md.
+
+If you use SLAMRecon in an academic work, please cite the most relevant publication associated by visiting:
+https://github.com/raulmur/ORB_SLAM2
+http://www.robots.ox.ac.uk/~victor/infinitam/

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\SLAM">
+      <UniqueIdentifier>{7374d60d-a7bd-44c4-a7bc-489f70c1e650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SLAM">
+      <UniqueIdentifier>{cab43867-a8ad-4048-8c79-ae483e917690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SLAM\base">
+      <UniqueIdentifier>{51037f9a-e4e0-410c-b13f-45c8dbd67b20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SLAM\utils">
+      <UniqueIdentifier>{00feaa9c-ae90-486d-9997-eb5e7161a8fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SLAM\process">
+      <UniqueIdentifier>{3953481e-f42e-4696-82d4-f74cb028f782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SLAM\base">
+      <UniqueIdentifier>{ec80f496-b763-436d-992a-3f2cde8adcc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SLAM\process">
+      <UniqueIdentifier>{c0de7f3d-254a-4e31-85c6-f509f3456ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SLAM\utils">
+      <UniqueIdentifier>{b90f3501-3bda-4c37-a115-35635af398b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ORB">
+      <UniqueIdentifier>{2c60fb7a-5b68-4410-9000-54cdb1e46830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ORB">
+      <UniqueIdentifier>{0f84d47c-5e29-44c9-9402-863e0a46b16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ORB\DBoW2">
+      <UniqueIdentifier>{e133c945-930b-4dc9-bb70-a213a8fbc4f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ORB\DBoW2">
+      <UniqueIdentifier>{39281025-f53f-470d-a1d3-c43eaa7649f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ORB\DBoW2\DUtils">
+      <UniqueIdentifier>{46288923-8073-4158-8897-95cdd8d5668b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ORB\DBoW2\DUtils">
+      <UniqueIdentifier>{dae2ca7f-bf67-4c6d-8d91-55a4ad6046f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SLAM\SLAM.h">
+      <Filter>Header Files\SLAM</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Frame.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\KeyFrame.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Map.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\MapPoint.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Tracking.h">
+      <Filter>Header Files\SLAM\process</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\LocalMapping.h">
+      <Filter>Header Files\SLAM\process</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\LoopClosing.h">
+      <Filter>Header Files\SLAM\process</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\ORBextractor.h">
+      <Filter>Header Files\ORB</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\ORBmatcher.h">
+      <Filter>Header Files\ORB</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\ORBVocabulary.h">
+      <Filter>Header Files\ORB</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DBoW2\BowVector.h">
+      <Filter>Header Files\ORB\DBoW2</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DBoW2\FClass.h">
+      <Filter>Header Files\ORB\DBoW2</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DBoW2\FeatureVector.h">
+      <Filter>Header Files\ORB\DBoW2</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DBoW2\FORB.h">
+      <Filter>Header Files\ORB\DBoW2</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DBoW2\ScoringObject.h">
+      <Filter>Header Files\ORB\DBoW2</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DBoW2\TemplatedVocabulary.h">
+      <Filter>Header Files\ORB\DBoW2</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DUtils\Random.h">
+      <Filter>Header Files\ORB\DBoW2\DUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="ORB\DBoW2\DUtils\Timestamp.h">
+      <Filter>Header Files\ORB\DBoW2\DUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\KeyFrameDatabase.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\PnPsolver.h">
+      <Filter>Header Files\SLAM\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Converter.h">
+      <Filter>Header Files\SLAM\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\CovisibilityGraph.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\SpanningTree.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\GraphNode.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\TreeNode.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Base.h">
+      <Filter>Header Files\SLAM\base</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Optimizer.h">
+      <Filter>Header Files\SLAM\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\Sim3Solver.h">
+      <Filter>Header Files\SLAM\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAM\types_seven_dof_expmap.h">
+      <Filter>Header Files\SLAM\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SLAM\SLAM.cpp">
+      <Filter>Source Files\SLAM</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\Frame.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\KeyFrame.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\Map.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\MapPoint.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\Tracking.cpp">
+      <Filter>Source Files\SLAM\process</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\LocalMapping.cpp">
+      <Filter>Source Files\SLAM\process</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\LoopClosing.cpp">
+      <Filter>Source Files\SLAM\process</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\ORBextractor.cpp">
+      <Filter>Source Files\ORB</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\ORBmatcher.cpp">
+      <Filter>Source Files\ORB</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\DBoW2\DUtils\Random.cpp">
+      <Filter>Source Files\ORB\DBoW2\DUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\DBoW2\DUtils\Timestamp.cpp">
+      <Filter>Source Files\ORB\DBoW2\DUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\DBoW2\DBoW2\BowVector.cpp">
+      <Filter>Source Files\ORB\DBoW2</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\DBoW2\DBoW2\FeatureVector.cpp">
+      <Filter>Source Files\ORB\DBoW2</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\DBoW2\DBoW2\FORB.cpp">
+      <Filter>Source Files\ORB\DBoW2</Filter>
+    </ClCompile>
+    <ClCompile Include="ORB\DBoW2\DBoW2\ScoringObject.cpp">
+      <Filter>Source Files\ORB\DBoW2</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\KeyFrameDatabase.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\PnPsolver.cpp">
+      <Filter>Source Files\SLAM\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\Converter.cpp">
+      <Filter>Source Files\SLAM\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\CovisibilityGraph.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\SpanningTree.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\GraphNode.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\TreeNode.cpp">
+      <Filter>Source Files\SLAM\base</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\Optimizer.cpp">
+      <Filter>Source Files\SLAM\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\Sim3Solver.cpp">
+      <Filter>Source Files\SLAM\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="SLAM\types_seven_dof_expmap.cpp">
+      <Filter>Source Files\SLAM\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

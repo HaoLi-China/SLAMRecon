@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{7a0f435f-2973-47ce-9312-606be56ccbab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{83e0531a-6c57-4482-8aa8-f3613392810c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\CUDA">
+      <UniqueIdentifier>{89bbf8c8-dd93-4b77-83fd-e6bde842d9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Common">
+      <UniqueIdentifier>{cdd701b8-b299-4728-93a7-c6b8a6d8c737}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utils\FELibDefines.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="FusionEngine.h" />
+    <ClInclude Include="Utils\FELibSettings.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FESceneParams.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FETracker.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEScene.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEView.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEIntrinsics.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FERGBDCalib.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEMesh.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FETrackingController.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FETrackerFactory.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FETrackingState.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FELowLevelEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FERenderState.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FEVisualisationEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\FEMathUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEPose.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEPointCloud.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEExtrinsics.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FERenderState_VH.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FEDepthTracker_CUDA.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FEDepthTracker.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECDepthTracker.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FECUDAUtils.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECPixelUtils.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FESceneHierarchyLevel.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FETemplatedHierarchyLevel.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEImageHierarchy.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Cholesky.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FEMeshingEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FEMeshingEngine_CUDA.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FEVisualisationEngine_CUDA.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECVisualisationEngine.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECRepresentationAccess.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECSceneReconstructionEngine.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FELowLevelEngine_CUDA.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECLowLevelEngine.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECMeshingEngine.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FEViewBuilder.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FEViewBuilder_CUDA.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Common\FECViewBuilder.h">
+      <Filter>Engine\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEDisparityCalib.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FEDenseMapper.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FESceneReconstructionEngine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\CUDA\FESceneReconstructionEngine_CUDA.h">
+      <Filter>Engine\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FEVoxelBlockHash.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Objects\FELocalVBA.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Utils\FELibSettings.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FETrackingController.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FETrackerFactory.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FEVisualisationEngine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Objects\FEPose.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FEDepthTracker.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FEDenseMapper.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="FusionEngine.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="Engine\CUDA\FEDepthTracker_CUDA.cu">
+      <Filter>Engine\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Engine\CUDA\FEMeshingEngine_CUDA.cu">
+      <Filter>Engine\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Engine\CUDA\FEVisualisationEngine_CUDA.cu">
+      <Filter>Engine\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Engine\CUDA\FELowLevelEngine_CUDA.cu">
+      <Filter>Engine\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Engine\CUDA\FEViewBuilder_CUDA.cu">
+      <Filter>Engine\CUDA</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Engine\CUDA\FESceneReconstructionEngine_CUDA.cu">
+      <Filter>Engine\CUDA</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

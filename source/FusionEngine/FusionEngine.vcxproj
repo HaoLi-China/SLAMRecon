@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A54E7DFC-570F-4AFB-B9CD-1461D3B3BC9C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FusionEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 7.5.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Platform)\$(Configuration)\lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Platform)\$(Configuration)\lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Basis\;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Basis\;$(CudaToolkitIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <CudaCompile>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+    </CudaCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Common\FECDepthTracker.h" />
+    <ClInclude Include="Engine\Common\FECLowLevelEngine.h" />
+    <ClInclude Include="Engine\Common\FECMeshingEngine.h" />
+    <ClInclude Include="Engine\Common\FECPixelUtils.h" />
+    <ClInclude Include="Engine\Common\FECRepresentationAccess.h" />
+    <ClInclude Include="Engine\Common\FECSceneReconstructionEngine.h" />
+    <ClInclude Include="Engine\Common\FECViewBuilder.h" />
+    <ClInclude Include="Engine\Common\FECVisualisationEngine.h" />
+    <ClInclude Include="Engine\CUDA\FECUDAUtils.h" />
+    <ClInclude Include="Engine\CUDA\FEDepthTracker_CUDA.h" />
+    <ClInclude Include="Engine\CUDA\FELowLevelEngine_CUDA.h" />
+    <ClInclude Include="Engine\CUDA\FEMeshingEngine_CUDA.h" />
+    <ClInclude Include="Engine\CUDA\FESceneReconstructionEngine_CUDA.h" />
+    <ClInclude Include="Engine\CUDA\FEViewBuilder_CUDA.h" />
+    <ClInclude Include="Engine\CUDA\FEVisualisationEngine_CUDA.h" />
+    <ClInclude Include="Engine\FEDenseMapper.h" />
+    <ClInclude Include="Engine\FEDepthTracker.h" />
+    <ClInclude Include="Engine\FELowLevelEngine.h" />
+    <ClInclude Include="Engine\FEMeshingEngine.h" />
+    <ClInclude Include="Engine\FESceneReconstructionEngine.h" />
+    <ClInclude Include="Engine\FETracker.h" />
+    <ClInclude Include="Engine\FETrackerFactory.h" />
+    <ClInclude Include="Engine\FETrackingController.h" />
+    <ClInclude Include="Engine\FEViewBuilder.h" />
+    <ClInclude Include="Engine\FEVisualisationEngine.h" />
+    <ClInclude Include="FusionEngine.h" />
+    <ClInclude Include="Objects\FEDisparityCalib.h" />
+    <ClInclude Include="Objects\FEExtrinsics.h" />
+    <ClInclude Include="Objects\FEImageHierarchy.h" />
+    <ClInclude Include="Objects\FEIntrinsics.h" />
+    <ClInclude Include="Objects\FELocalVBA.h" />
+    <ClInclude Include="Objects\FEMesh.h" />
+    <ClInclude Include="Objects\FEPointCloud.h" />
+    <ClInclude Include="Objects\FEPose.h" />
+    <ClInclude Include="Objects\FERenderState.h" />
+    <ClInclude Include="Objects\FERenderState_VH.h" />
+    <ClInclude Include="Objects\FERGBDCalib.h" />
+    <ClInclude Include="Objects\FEScene.h" />
+    <ClInclude Include="Objects\FESceneHierarchyLevel.h" />
+    <ClInclude Include="Objects\FESceneParams.h" />
+    <ClInclude Include="Objects\FETemplatedHierarchyLevel.h" />
+    <ClInclude Include="Objects\FETrackingState.h" />
+    <ClInclude Include="Objects\FEView.h" />
+    <ClInclude Include="Objects\FEVoxelBlockHash.h" />
+    <ClInclude Include="Utils\Cholesky.h" />
+    <ClInclude Include="Utils\FELibDefines.h" />
+    <ClInclude Include="Utils\FELibSettings.h" />
+    <ClInclude Include="Utils\FEMathUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\FEDenseMapper.cpp" />
+    <ClCompile Include="Engine\FEDepthTracker.cpp" />
+    <ClCompile Include="Engine\FETrackerFactory.cpp" />
+    <ClCompile Include="Engine\FETrackingController.cpp" />
+    <ClCompile Include="Engine\FEVisualisationEngine.cpp" />
+    <ClCompile Include="FusionEngine.cpp" />
+    <ClCompile Include="Objects\FEPose.cpp" />
+    <ClCompile Include="Utils\FELibSettings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="Engine\CUDA\FEDepthTracker_CUDA.cu" />
+    <CudaCompile Include="Engine\CUDA\FELowLevelEngine_CUDA.cu" />
+    <CudaCompile Include="Engine\CUDA\FEMeshingEngine_CUDA.cu" />
+    <CudaCompile Include="Engine\CUDA\FESceneReconstructionEngine_CUDA.cu" />
+    <CudaCompile Include="Engine\CUDA\FEViewBuilder_CUDA.cu" />
+    <CudaCompile Include="Engine\CUDA\FEVisualisationEngine_CUDA.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 7.5.targets" />
+  </ImportGroup>
+</Project>
