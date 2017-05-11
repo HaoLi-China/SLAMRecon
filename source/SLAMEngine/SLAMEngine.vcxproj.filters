@@ -53,9 +53,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="SLAM\SLAM.h">
       <Filter>Header Files\SLAM</Filter>
     </ClInclude>

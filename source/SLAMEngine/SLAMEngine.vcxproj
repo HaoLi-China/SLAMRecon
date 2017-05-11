@@ -146,9 +146,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="ORB\DBoW2\DBoW2\BowVector.h" />
     <ClInclude Include="ORB\DBoW2\DBoW2\FClass.h" />
     <ClInclude Include="ORB\DBoW2\DBoW2\FeatureVector.h" />
