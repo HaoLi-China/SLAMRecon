@@ -1,7 +1,7 @@
 /**
 * This file is part of ORB-SLAM2.
 *
-* Copyright (C) 2014-2016 Ra¨²l Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
+* Copyright (C) 2014-2016 RaÂ¨Â²l Mur-Artal <raulmur at unizar dot es> (University of Zaragoza)
 * For more information see <https://github.com/raulmur/ORB_SLAM2>
 *
 * ORB-SLAM2 is free software: you can redistribute it and/or modify
@@ -184,10 +184,8 @@ namespace SLAMRecon {
 			} else if (((int)nCurrentKFid - (int)pMP->m_nFirstKFid) >= 2 && pMP->Observations() <= cnThObs) {
 				pMP->SetBadFlag();
 				lit = m_lpRecentAddedMapPoints.erase(lit);
-				 cout << "error 1" << endl; 
 			} else if (((int)nCurrentKFid - (int)pMP->m_nFirstKFid) >= 3) {
 				lit = m_lpRecentAddedMapPoints.erase(lit);
-				 cout << "error 2" << endl;
 			}
 			else
 				lit++;
@@ -220,7 +218,7 @@ namespace SLAMRecon {
 		const float &invfx1 = m_pCurrentKeyFrame->m_pCameraInfo->m_invfx;
 		const float &invfy1 = m_pCurrentKeyFrame->m_pCameraInfo->m_invfy;
 
-		const float ratioFactor = 1.5f * m_pCurrentKeyFrame->m_pPLevelInfo->m_fScaleFactor; // £¿£¿£¿£¿
+		const float ratioFactor = 1.5f * m_pCurrentKeyFrame->m_pPLevelInfo->m_fScaleFactor; // Â£Â¿Â£Â¿Â£Â¿Â£Â¿
 
 		int nnew = 0;
 
